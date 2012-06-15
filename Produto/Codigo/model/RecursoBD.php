@@ -1,0 +1,27 @@
+<?php
+	/*
+	 * Finalidade: Manipular recursos do sistema no banco de dados
+	 * Autor: Rômulo de Oliveira Jorge
+	 * Data: 11/04/2012
+	 */
+	interface RecursoBD
+	{
+		/*
+		 * Função: Incluir recurso no banco de dados
+		 * Retorno: Resultado da operação, sucesso (true) ou falha (false)
+		 */
+		public function incluirRecurso();
+		
+		/*
+		 * Função: Alterar recurso no banco de dados
+		 * Retorno: Resultado da operação, sucesso (true) ou falha (false)
+		 */
+		public function alterarRecurso();
+		
+		/*
+		 * Função: Excluir recurso no banco de dados
+		 * Retorno: Resultado da operação, sucesso (true) ou falha (false)
+		 */
+		public function excluirRecurso();
+	}
+?>

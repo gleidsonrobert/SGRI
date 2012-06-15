@@ -1,0 +1,71 @@
+<?php
+	/*
+	 * Finalidade: Instanciar datas de evento do sistema
+	 * Autor: Rômulo de Oliveira Jorge
+	 * Data: 13/05/2012
+	 */
+	class DataEvento
+	{
+		/* Propriedades */
+		private $idData;
+		private $dataEvento;
+		private $idReserva;
+		
+		/*
+		 * Função: Definir ID para instância da data do evento
+		 * Parâmetros
+		 * $idData: ID da data
+		 */
+		public function definirIdData($idData)
+		{
+			$this->idData = $idData;
+		}
+		
+		/*
+		 * Função: Obter ID da instância da data do evento
+		 * Retorno: ID da data
+		 */
+		public function obterIdData()
+		{
+			return $this->idData;
+		}
+		
+		/*
+		 * Função: Definir data para instância da data do evento
+		 * Parâmetros
+		 * $dataEvento: data do evento
+		 */
+		public function definirDataEvento($dataEvento)
+		{
+			$this->dataEvento = $dataEvento;
+		}
+		
+		/*
+		 * Função: Obter data da instância da data do evento
+		 * Retorno: data do evento
+		 */
+		public function obterDataEvento()
+		{
+			return $this->dataEvento;
+		}
+		
+		/*
+		 * Função: Definir ID da reserva para instância da data do evento
+		 * Parâmetros
+		 * $idReserva: ID da reserva da data
+		 */
+		public function definirIdReserva($idReserva)
+		{
+			$this->idReserva = $idReserva;
+		}
+		
+		/*
+		 * Função: Obter ID da reserva da instância da data do evento
+		 * Retorno: ID da reserva da data
+		 */
+		public function obterIdReserva()
+		{
+			return $this->idReserva;
+		}
+	}
+?>

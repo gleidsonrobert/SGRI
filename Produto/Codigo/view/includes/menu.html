@@ -1,0 +1,55 @@
+﻿<div class="esquerda">
+	<div id="navigation-block">
+		<ul id="sliding-navigation">
+			<li class="sliding-element"><a href="" id="titulo">Menu</a></li>
+			<ul id="navmenu">
+				<?php
+					if ($_SESSION["permissao"] == "F" || $_SESSION["permissao"] == "S")
+					{
+						echo "
+							<li class=\"sliding-element\" ><a href=\"#\">Gerenciar Recursos</a>
+								<ul>
+									<li class=\"sliding-element\"><a href=\"gerenciar_equipamentos.php\">Equipamentos</a></li>
+									<li class=\"sliding-element\"><a href=\"gerenciar_salas.php\">Salas</a></li>
+								</ul>
+							</li>
+							<li class=\"sliding-element\"><a href=\"gerenciar_usuarios.php\">Gerenciar Usuários</a></li>
+							<li class=\"sliding-element\" ><a href=\"#\">Importar Arquivos</a>
+								<ul>
+									<li class=\"sliding-element\"><a href=\"importar_pessoas.php\">Professores/Funcionários</a></li>
+									<li class=\"sliding-element\"><a href=\"importar_turmas.php\">Turmas/Horários/Salas</a></li>
+								</ul>
+							</li>
+						";
+					}
+					
+					if ($_SESSION["permissao"] == "P" || $_SESSION["permissao"] == "C" || $_SESSION["permissao"] == "S")
+					{
+						echo "
+							<li class=\"sliding-element\"><a href=\"#\">Gerenciar Reservas</a>
+								<ul>
+									<li class=\"sliding-element\"><a href=\"gerenciar_reservas_aula.php\">Aulas</a></li>
+						";
+					}
+					if ($_SESSION["permissao"] == "C" || $_SESSION["permissao"] == "S")
+					{
+						echo " <li class=\"sliding-element\"><a href=\"gerenciar_reservas_evento.php\">Eventos</a></li> ";
+					}
+					
+					if ($_SESSION["permissao"] == "P" || $_SESSION["permissao"] == "C" || $_SESSION["permissao"] == "S")
+					{
+						echo "
+								</ul>
+							</li>
+							<li class=\"sliding-element\"><a href=\"gerenciar_ocorrencias.php\">Gerenciar Ocorrências</a></li>
+						";
+					}
+					
+					echo "
+						<li class=\"sliding-element\"><a href=\"emitir_relatorios.php\">Emitir Relatórios</a></li>
+					";
+				?>
+			</ul>
+		</ul>
+	</div>
+</div>

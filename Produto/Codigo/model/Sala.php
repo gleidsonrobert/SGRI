@@ -1,0 +1,113 @@
+<?php
+	include_once ("Recurso.php");
+	
+	/*
+	 * Finalidade: Instanciar salas do sistema
+	 * Autor: Rômulo de Oliveira Jorge
+	 * Data: 11/04/2012
+	 */
+	class Sala extends Recurso
+	{
+		/* Propriedades */
+		private $numeroSala;
+		private $descricaoSala;
+		private $localizacaoSala;
+		private $capacidadeSala;
+		private $tipoSala;
+		
+		/*
+		 * Função: Definir número para instância da sala
+		 * Parâmetros
+		 * $numeroSala: número da sala
+		 */
+		public function definirNumeroSala($numeroSala)
+		{
+			$this->numeroSala = $numeroSala;
+		}
+		
+		/*
+		 * Função: Obter número da instância da sala
+		 * Retorno: número da sala
+		 */
+		public function obterNumeroSala()
+		{
+			return $this->numeroSala;
+		}
+		
+		/*
+		 * Função: Definir descrição para instância da sala
+		 * Parâmetros
+		 * $descricaoSala: descrição da sala
+		 */
+		public function definirDescricaoSala($descricaoSala)
+		{
+			$this->descricaoSala = $descricaoSala;
+		}
+		
+		/*
+		 * Função: Obter descrição da instância da sala
+		 * Retorno: descrição da sala
+		 */
+		public function obterDescricaoSala()
+		{
+			return $this->descricaoSala;
+		}
+		
+		/*
+		 * Função: Definir localização para instância da sala
+		 * Parâmetros
+		 * $localizacaoSala: localização da sala
+		 */
+		public function definirLocalizacaoSala($localizacaoSala)
+		{
+			$this->localizacaoSala = $localizacaoSala;
+		}
+		
+		/*
+		 * Função: Obter localização da instância da sala
+		 * Retorno: localização da sala
+		 */
+		public function obterLocalizacaoSala()
+		{
+			return $this->localizacaoSala;
+		}
+		
+		/*
+		 * Função: Definir capacidade para instância da sala
+		 * Parâmetros
+		 * $capacidadeSala: capacidade da sala
+		 */
+		public function definirCapacidadeSala($capacidadeSala)
+		{
+			$this->capacidadeSala = $capacidadeSala;
+		}
+		
+		/*
+		 * Função: Obter capacidade da instância da sala
+		 * Retorno: capacidade da sala
+		 */
+		public function obterCapacidadeSala()
+		{
+			return $this->capacidadeSala;
+		}
+		
+		/*
+		 * Função: Definir tipo para instância da sala
+		 * Parâmetros
+		 * $tipoSala: tipo da sala
+		 */
+		public function definirTipoSala($tipoSala)
+		{
+			$this->tipoSala = $tipoSala;
+		}
+		
+		/*
+		 * Função: Obter tipo da instância da sala
+		 * Retorno: tipo da sala
+		 */
+		public function obterTipoSala()
+		{
+			return $this->tipoSala;
+		}
+	}
+?>

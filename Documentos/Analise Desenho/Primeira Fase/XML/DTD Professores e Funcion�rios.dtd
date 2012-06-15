@@ -1,0 +1,9 @@
+<!Element DOC(Funcionarios, Professores, Coordenadores)>
+<!Element Funcionarios(Funcionario*)>
+<!Element Funcionario(cpf, nome, nascimento?, sexo?, endereço?, cidade?, uf?, telefone?, email?, graduacao, funcao)>
+<!Element Professores(Professor*)>
+<!Element Professor(cpf, nome, nascimento?, sexo?, endereço?, cidade?, uf?, telefone?, email?, escolaridade)>
+<!Element Coordenadores(Coordenador*)>
+<!Element Coordenador(cpf, nome, nascimento?, sexo?, endereço?, cidade?, uf?, telefone?, email?, escolaridade, curso?)>
+<!Element endereco(rua, numero, cep, complemento?)>
+<!Element escolaridade(graduacao, mestrado, doutorado?)>

@@ -1,0 +1,7 @@
+<div class="links_topo">
+	<a>Bem Vindo <?php echo $_SESSION["nome"]; ?>
+	</a>
+	<span>-</span>
+	<?php echo $_SESSION["permissao"] == "S" ? "" : "<a href='alterar_senha.php'>Alterar Senha</a> <span>-</span>" ?>
+	<a onclick="javascript:return confirma_saida()" href='../control/UsuarioControle.php?opcaoUsuario=Deslogar'>Logout</a>
+</div>

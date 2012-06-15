@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="static/css/estilos.css" />
+		<title>SGRI - Trabalho Interdisciplinar</title>
+		<script type="text/javascript" src="static/js/js.validation.validateForm.js"></script>
+		<script type="text/javascript" src="static/js/util.validateForm.js"></script>
+		<script type="text/javascript" src="static/js/utils.js"></script>
+		<script type="text/javascript" src="static/js/util.ajax.js"></script>
+		<script type="text/javascript" src="static/js/ajax.js"></script>
+		<script type="text/javascript" src="static/js/jquery.js"></script>
+		<script type="text/javascript" src="static/js/sliding_effect.js"></script>
+		<script defer type="text/javascript" src="static/js/pngfix.js"></script>
+		<script defer type="text/javascript" src="static/js/dhtml.js"></script>
+		<script type="text/javascript" src="static/js/script.js"></script>
+		<script type="text/javascript" language="JavaScript">
+			window.onload = function(){
+				// faz com que imagens PNG funcionem no IE
+				TransformerPNG();
+				Utils.campoAguarde();
+				Utils.cookieDiv();
+				Utils.validaForm();
+			}
+			
+			function envia_dados(){
+				var d = document.getElementById('div_erro');
+				d.innerHTML ='';
+
+				var form = document.getElementById('form');	
+				if(document.getElementById('form').onsubmit()){
+				   document.getElementById('form').submit();	   
+				}
+			}
+			
+			function confirma_exclusao(){
+				msg = "Deseja realmente excluir este registro?";
+				return confirm(msg);
+			}
+			
+			function confirma_saida(){
+				msg = "Deseja realmente sair do sistema?";
+				return confirm(msg);
+			}
+			
+			function valida_senha(){
+				var d = document.getElementById('div_erro');
+				d.innerHTML ='';
+
+				var form = document.getElementById('form');	
+				if (senhaOk() == true){
+					if(document.getElementById('form').onsubmit()){
+					   document.getElementById('form').submit();
+					}
+				}
+			}
+			senhaOk = function(){
+				var min = 4;
+				var senha = document.getElementById('senhaNova');
+				var confSenha = document.getElementById('senhaNova2');
+				if((senha.value==confSenha.value) && (senha.value.length>=min)){
+				  return true
+				} else {
+					if (senha.value.length<min){
+					  var d = document.getElementById('div_erro');
+					  d.innerHTML = "<a>A senha deve conter no mínimo 4 caracteres</a>"
+					  d.style.display = 'block';
+					  senha.focus();
+					  senha.select();
+					  return false
+					} else {
+						var d = document.getElementById('div_erro');
+						d.innerHTML = "<a>Senha e confirmação da senha não conferem, verifique</a>"
+						d.style.display = 'block';
+						senha.focus();
+						senha.select();
+						return false
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="pagina">
+			<?php include_once("topo.html"); ?>
+			<!--<div class="barra_separacao_topo">&nbsp;</div>-->
+			<div class="conteudo_geral">
+				<div class="conteudo_alinhamento">
+					<div class="conteudo">

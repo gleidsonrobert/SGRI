@@ -1,0 +1,74 @@
+<?php
+	include_once ("Pessoa.php");
+	
+	/*
+	 * Finalidade: Instanciar professores do sistema
+	 * Autor: Túlio Henrique Café Carvalhais
+	 * Data: 06/04/2012
+	 */
+	class Professor extends Pessoa
+	{
+		/* Propriedades */
+		protected $graduacaoProfessor;
+		protected $mestradoProfessor;
+		protected $doutoradoProfessor;
+		
+		/*
+		 * Função: Definir graduação para instância do professor
+		 * Parâmetros
+		 * $graduacaoProfessor: graduação do professor
+		 */
+		public function definirGraduacaoProfessor($graduacaoProfessor)
+		{
+			$this->graduacaoProfessor = $graduacaoProfessor;
+		}
+		
+		/*
+		 * Função: Obter graduação da instância do professor
+		 * Retorno: graduação do professor
+		 */
+		public function obterGraduacaoProfessor()
+		{
+			return $this->graduacaoProfessor;
+		}
+		
+		/*
+		 * Função: Definir mestrado para instância do professor
+		 * Parâmetros
+		 * $mestradoProfessor: mestrado do professor
+		 */
+		 
+		public function definirMestradoProfessor($mestradoProfessor)
+		{
+			$this->mestradoProfessor = $mestradoProfessor;
+		}
+		
+		/*
+		 * Função: Obter mestrado da instância do professor
+		 * Retorno: mestrado do professor
+		 */
+		public function obterMestradoProfessor()
+		{
+			return $this->mestradoProfessor;
+		}
+		
+		/*
+		 * Função: Definir doutorado para instância do professor
+		 * Parâmetros
+		 * $doutoradoProfessor: doutorado do professor
+		 */
+		public function definirDoutoradoProfessor($doutoradoProfessor)
+		{
+			$this->doutoradoProfessor = $doutoradoProfessor;
+		}
+		
+		/*
+		 * Função: Obter doutorado da instância do professor
+		 * Retorno: doutorado do professor
+		 */
+		public function obterDoutoradoProfessor()
+		{
+			return $this->doutoradoProfessor;
+		}
+	}
+?>

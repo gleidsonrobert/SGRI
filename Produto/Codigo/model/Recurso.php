@@ -1,0 +1,31 @@
+<?php
+	/*
+	 * Finalidade: Instanciar recursos do sistema
+	 * Autor: Rômulo de Oliveira Jorge
+	 * Data: 11/04/2012
+	 */
+	abstract class Recurso
+	{
+		/* Propriedades */
+		protected $idRecurso;
+		
+		/*
+		 * Função: Definir ID para instância da recurso
+		 * Parâmetros
+		 * $idRecurso: ID do recurso
+		 */
+		public function definirIdRecurso($idRecurso)
+		{
+			$this->idRecurso = $idRecurso;
+		}
+		
+		/*
+		 * Função: Obter ID da instância da recurso
+		 * Retorno: ID do recurso
+		 */
+		public function obterIdRecurso()
+		{
+			return $this->idRecurso;
+		}
+	}
+?>

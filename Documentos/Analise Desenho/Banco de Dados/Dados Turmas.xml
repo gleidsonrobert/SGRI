@@ -1,0 +1,55 @@
+<DOC>
+	<Turmas>
+		<Turma>
+			<cpfProfessor>11111111111</cpfProfessor>
+			<disciplinaTurma>Projeto de Sistemas de Informacao</disciplinaTurma>
+			<numeroSala>304</numeroSala>
+			<Horarios>
+				<Horario>
+					<inicioHorario>20:50:00</inicioHorario>
+					<fimHorario>22:30:00</fimHorario>
+					<diaHorario>1</diaHorario>
+				</Horario>
+				<Horario>
+					<inicioHorario>19:00:00</inicioHorario>
+					<fimHorario>20:40:00</fimHorario>
+					<diaHorario>2</diaHorario>
+				</Horario>
+			</Horarios>
+		</Turma>
+		<Turma>
+			<cpfProfessor>11111111112</cpfProfessor>
+			<disciplinaTurma>Banco de Dados I</disciplinaTurma>
+			<numeroSala>304</numeroSala>
+			<Horarios>
+				<Horario>
+					<inicioHorario>19:00:00</inicioHorario>
+					<fimHorario>20:40:00</fimHorario>
+					<diaHorario>1</diaHorario>
+				</Horario>
+				<Horario>
+					<inicioHorario>20:50:00</inicioHorario>
+					<fimHorario>22:30:00</fimHorario>
+					<diaHorario>4</diaHorario>
+				</Horario>
+			</Horarios>
+		</Turma>
+		<Turma>
+			<cpfProfessor>22222222221</cpfProfessor>
+			<disciplinaTurma>Inteligencia Artificial</disciplinaTurma>
+			<numeroSala>304</numeroSala>
+			<Horarios>
+				<Horario>
+					<inicioHorario>19:00:00</inicioHorario>
+					<fimHorario>20:40:00</fimHorario>
+					<diaHorario>4</diaHorario>
+				</Horario>
+				<Horario>
+					<inicioHorario>20:50:00</inicioHorario>
+					<fimHorario>22:30:00</fimHorario>
+					<diaHorario>2</diaHorario>
+				</Horario>
+			</Horarios>
+		</Turma>
+	</Turmas>
+</DOC>

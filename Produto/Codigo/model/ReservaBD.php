@@ -1,0 +1,21 @@
+<?php
+	/*
+	 * Finalidade: Manipular reservas do sistema no banco de dados
+	 * Autor: Rômulo de Oliveira Jorge
+	 * Data: 13/05/2012
+	 */
+	interface ReservaBD
+	{
+		/*
+		 * Função: Incluir reserva no banco de dados
+		 * Retorno: Resultado da operação, sucesso (true) ou falha (false)
+		 */
+		public function efetuarReserva();
+		
+		/*
+		 * Função: Excluir reserva do banco de dados
+		 * Retorno: Resultado da operação, sucesso (true) ou falha (false)
+		 */
+		public function cancelarReserva();
+	}
+?>

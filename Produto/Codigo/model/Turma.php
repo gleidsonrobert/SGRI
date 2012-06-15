@@ -1,0 +1,91 @@
+<?php
+	/*
+	 * Finalidade: Instanciar turmas do sistema
+	 * Autor: Wander Maia da Silva
+	 * Data: 29/05/2012
+	 */
+	class Turma
+	{
+		/* Propriedades */
+		private $idTurma;
+		private $disciplinaTurma;
+		private $numeroSala;
+		private $cpfPessoa;
+		
+		/*
+		 * Função: Definir ID para instância da turma
+		 * Parâmetros
+		 * $idTurma: ID da turma
+		 */
+		public function definirIdTurma($idTurma)
+		{
+			$this->idTurma = $idTurma;
+		}
+		
+		/*
+		 * Função: Obter ID da instância da turma
+		 * Retorno: ID da turma
+		 */
+		public function obterIdTurma()
+		{
+			return $this->idTurma;
+		}
+		
+		/*
+		 * Função: Definir disciplina para instância da turma
+		 * Parâmetros
+		 * $disciplinaTurma: Disciplina da turma
+		 */
+		public function definirDisciplinaTurma($disciplinaTurma)
+		{
+			$this->disciplinaTurma = $disciplinaTurma;
+		}
+		
+		/*
+		 * Função: Obter disciplina da instância da turma
+		 * Retorno: Disciplina da turma
+		 */
+		public function obterDisciplinaTurma()
+		{
+			return $this->disciplinaTurma;
+		}
+		
+		/*
+		 * Função: Definir número da sala para instância da turma
+		 * Parâmetros
+		 * $numeroSala: Número da sala da turma
+		 */
+		public function definirNumeroSala($numeroSala)
+		{
+			$this->numeroSala = $numeroSala;
+		}
+		
+		/*
+		 * Função: Obter número da sala para instância da turma
+		 * Retorno: Número da sala da turma
+		 */
+		public function obterNumeroSala()
+		{
+			return $this->numeroSala;
+		}
+		
+		/*
+		 * Função: Definir CPF do professor referente à instância da turma
+		 * Parâmetros
+		 * $cpfPessoa: CPF do professor referente à turma
+		 */
+		public function definirCpfPessoa($cpfPessoa)
+		{
+			$this->cpfPessoa = $cpfPessoa;
+		}
+		
+		/*
+		 * Função: Obter CPF do professor referente à instância da turma
+		 * Retorno: CPF do professor referente à turma
+		 */
+		public function obterCpfPessoa()
+		{
+			return $this->cpfPessoa;
+		}
+	}
+?>

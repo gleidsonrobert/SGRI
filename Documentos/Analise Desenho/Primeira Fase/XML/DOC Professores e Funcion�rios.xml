@@ -1,0 +1,78 @@
+<DOC XML>
+	<Funcionarios>
+		<Funcionario>
+			<cpf> </cpf>
+			<nome> </nome>
+			<nascimento> </nascimento>
+			<sexo> </sexo>
+			<endereco>
+				<rua> </rua>
+				<numero> </numero>
+				<cep> </cep>
+				<complemento> </complemento>
+			</endereco>
+			<cidade> </cidade>
+			<uf> </uf>
+			<telefone> </telefone>
+			<email> </email>
+			<graduacao> </graduacao>
+			<funcao> </funcao>
+		</Funcionario>
+		<Funcionario>
+		
+		</Funcionario>
+	</Funcionarios>
+	<Professores>
+		<Professor>
+			<cpf> </cpf>
+			<nome> </nome>
+			<nascimento> </nascimento>
+			<sexo> </sexo>
+			<endereco>
+				<rua> </rua>
+				<numero> </numero>
+				<cep> </cep>
+				<complemento> </complemento>
+			</endereco>
+			<cidade> </cidade>
+			<uf> </uf>
+			<telefone> </telefone>
+			<email> </email>
+			<escolaridade>
+				<graduacao> </graduacao>
+				<mestrado> </mestrado>
+				<doutorado> </doutorado>
+			</escolaridade>
+		</Professor>
+		<Professor>
+		
+		</Professor>
+	</Professores>
+	<Coordenadores>
+		<Coordenador>
+			<cpf> </cpf>
+			<nome> </nome>
+			<nascimento> </nascimento>
+			<sexo> </sexo>
+			<endereco>
+				<rua> </rua>
+				<numero> </numero>
+				<cep> </cep>
+				<complemento> </complemento>
+			</endereco>
+			<cidade> </cidade>
+			<uf> </uf>
+			<telefone> </telefone>
+			<email> </email>
+			<escolaridade>
+				<graduacao> </graduacao>
+				<mestrado> </mestrado>
+				<doutorado> </doutorado>
+			</escolaridade>
+			<curso> </curso>
+		</Coordenador>
+		<Coordenador>
+		
+		</Coordenador>
+	</Coordenadores>
+</DOC>

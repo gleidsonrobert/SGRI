@@ -1,0 +1,51 @@
+<?php
+	/*
+	 * Finalidade: Instanciar item de reserva do sistema
+	 * Autor: Rômulo de Oliveira Jorge
+	 * Data: 13/05/2012
+	 */
+	class ItemReserva
+	{
+		/* Propriedades */
+		private $idReserva;
+		private $idRecurso;
+		
+		/*
+		 * Função: Definir ID da reserva para instância do item
+		 * Parâmetros
+		 * $idReserva: ID da reserva
+		 */
+		public function definirIdReserva($idReserva)
+		{
+			$this->idReserva = $idReserva;
+		}
+		
+		/*
+		 * Função: Obter ID da reserva da instância do item
+		 * Retorno: ID da reserva
+		 */
+		public function obterIdReserva()
+		{
+			return $this->idReserva;
+		}
+		
+		/*
+		 * Função: Definir ID do recurso para instância do item
+		 * Parâmetros
+		 * $idRecurso: ID do recurso
+		 */
+		public function definirIdRecurso($idRecurso)
+		{
+			$this->idRecurso = $idRecurso;
+		}
+		
+		/*
+		 * Função: Obter ID do recurso data instância do item
+		 * Retorno: ID do recurso
+		 */
+		public function obterIdRecurso()
+		{
+			return $this->idRecurso;
+		}
+	}
+?>

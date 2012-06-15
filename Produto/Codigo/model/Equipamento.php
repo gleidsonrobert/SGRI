@@ -1,0 +1,93 @@
+<?php
+	include_once ("Recurso.php");
+	
+	/*
+	 * Finalidade: Instanciar equipamentos do sistema
+	 * Autor: Rômulo de Oliveira Jorge
+	 * Data: 11/04/2012
+	 */
+	class Equipamento extends Recurso
+	{
+		/* Propriedades */
+		private $patrimonioEquipamento;
+		private $descricaoEquipamento;
+		private $tipoEquipamento;
+		private $statusEquipamento;
+		
+		/*
+		 * Função: Definir patrimônio para instância do equipamento
+		 * Parâmetros
+		 * $patrimonioEquipamento: patrimônio do equipamento
+		 */
+		public function definirPatrimonioEquipamento($patrimonioEquipamento)
+		{
+			$this->patrimonioEquipamento = $patrimonioEquipamento;
+		}
+		
+		/*
+		 * Função: Obter patrimônio da instância do equipamento
+		 * Retorno: patrimônio do equipamento
+		 */
+		public function obterPatrimonioEquipamento()
+		{
+			return $this->patrimonioEquipamento;
+		}
+		
+		/*
+		 * Função: Definir descrição para instância do equipamento
+		 * Parâmetros
+		 * $descricaoEquipamento: descrição do equipamento
+		 */
+		public function definirDescricaoEquipamento($descricaoEquipamento)
+		{
+			$this->descricaoEquipamento = $descricaoEquipamento;
+		}
+		
+		/*
+		 * Função: Obter descrição da instância do equipamento
+		 * Retorno: descrição do equipamento
+		 */
+		public function obterDescricaoEquipamento()
+		{
+			return $this->descricaoEquipamento;
+		}
+		
+		/*
+		 * Função: Definir tipo para instância do equipamento
+		 * Parâmetros
+		 * $tipoEquipamento: tipo do equipamento
+		 */
+		public function definirTipoEquipamento($tipoEquipamento)
+		{
+			$this->tipoEquipamento = $tipoEquipamento;
+		}
+		
+		/*
+		 * Função: Obter tipo da instância do equipamento
+		 * Retorno: tipo do equipamento
+		 */
+		public function obterTipoEquipamento()
+		{
+			return $this->tipoEquipamento;
+		}
+		
+		/*
+		 * Função: Definir status para instância do equipamento
+		 * Parâmetros
+		 * $statusEquipamento: status do equipamento
+		 */
+		public function definirStatusEquipamento($statusEquipamento)
+		{
+			$this->statusEquipamento = $statusEquipamento;
+		}
+		
+		/*
+		 * Função: Obter status da instância do equipamento
+		 * Retorno: status do equipamento
+		 */
+		public function obterStatusEquipamento()
+		{
+			return $this->statusEquipamento;
+		}
+	}
+?>
